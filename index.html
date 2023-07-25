@@ -1,11 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Projects</title>
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@400;700;900&display=swap"
+        rel="stylesheet">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/fd347bde0c.js" crossorigin="anonymous"></script>
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
+
+<body class="font-lato">
     
+    <section>
+
+        <div class="navbar container mx-auto text-white bg-base-100 bg-[#F85559] rounded-full px-14 my-12">
+            <div class="navbar-start ">
+
+                <div class="flex  space-x-10">
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Shop</p>
+                    <p>All Fruits</p>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1">
+                    <div class="flex justify-center items-center">
+                        <li><img src="./images/logo.png" alt=""></li>
+                        <li class="text-4xl font-extrabold">Fruit Burst</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <input type="text" placeholder="Search here"
+                    class="input input-bordered rounded-full w-full max-w-xs " />
+
+                    <i class="-ml-5 fa-solid fa-magnifying-glass" style="color: #767f8f;"></i>
+                
+
+            </div>
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Item 1</a></li>
+                    <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Shop </li>
+                            <li>All Fruits</li>
+                        </ul>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- banner part -->
+        <!-- slider 1 -->
+        <section>
+            <div class="container mx-auto mt-14 ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/images/banner1.png" class="w-full" />
+                  <div class="absolute  justify-center inset-0 text-center">
+                    <h1 class="text-7xl pt-20 font-extrabold text-white placeholder-slate-200">Exotic tastes at your <br> doorstep</h1>
+                    <p class="text-xl pt-8 text-white font-medium">We supply highly quality organic products</p>
+                    <button class="btn  bg-[#F85559] px-8  text-white font-extrabold mt-10 border-0">Shop Now</button>
+                  </div>
+
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div class="max-w-7xl flex -mt-20 justify-center items-center text-center gap-10 bg-white shadow-xl rounded-md p-20 space-x-10 ml-20 relative inset-0">
+                        <div>
+                            <img src="./images/fruit1.png" alt="">
+                            <p class="text-xl font-medium">Graps</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit2.png" alt="">
+                            <p class="text-xl font-medium">Orange</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit3.png" alt="">
+                            <p class="text-xl font-medium">Mango</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit4.png" alt="">
+                            <p class="text-xl font-medium">Strawberry</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit5.png" alt="">
+                            <p class="text-xl font-medium">Mango</p>
+                        </div>     
+               </div>
+              </div>
+        </section>
+        <!-- slider 2 -->
+        <section>
+            <div class="container mx-auto mt-14 ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/images/team.png" class="w-full" />
+                  <div class="absolute  justify-center inset-0 text-center">
+                    <h1 class="text-7xl pt-20 font-extrabold text-white placeholder-slate-200">Exotic tastes at your <br> doorstep</h1>
+                    <p class="text-xl pt-8 text-white font-medium">We supply highly quality organic products</p>
+                    <button class="btn  bg-[#F85559] px-8  text-white font-extrabold mt-10 border-0">Shop Now</button>
+                  </div>
+
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div class="max-w-7xl flex -mt-20 justify-center items-center text-center gap-10 bg-white shadow-xl rounded-md p-20 space-x-10 ml-20 relative inset-0">
+                        <div>
+                            <img src="./images/fruit1.png" alt="">
+                            <p class="text-xl font-medium">Graps</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit2.png" alt="">
+                            <p class="text-xl font-medium">Orange</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit3.png" alt="">
+                            <p class="text-xl font-medium">Mango</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit4.png" alt="">
+                            <p class="text-xl font-medium">Strawberry</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit5.png" alt="">
+                            <p class="text-xl font-medium">Mango</p>
+                        </div>     
+               </div>
+              </div>
+        </section>
+        <!-- slider 3 -->
+        <section>
+            <div class="container mx-auto mt-14 ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/images/team.png" class="w-full" />
+                  <div class="absolute  justify-center inset-0 text-center">
+                    <h1 class="text-7xl pt-20 font-extrabold text-white placeholder-slate-200">Exotic tastes at your <br> doorstep</h1>
+                    <p class="text-xl pt-8 text-white font-medium">We supply highly quality organic products</p>
+                    <button class="btn  bg-[#F85559] px-8  text-white font-extrabold mt-10 border-0">Shop Now</button>
+                  </div>
+
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div class="max-w-7xl flex -mt-20 justify-center items-center text-center gap-10 bg-white shadow-xl rounded-md p-20 space-x-10 ml-20 relative inset-0">
+                        <div>
+                            <img src="./images/fruit1.png" alt="">
+                            <p class="text-xl font-medium">Graps</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit2.png" alt="">
+                            <p class="text-xl font-medium">Orange</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit3.png" alt="">
+                            <p class="text-xl font-medium">Mango</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit4.png" alt="">
+                            <p class="text-xl font-medium">Strawberry</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit5.png" alt="">
+                            <p class="text-xl font-medium">Mango</p>
+                        </div>     
+               </div>
+              </div>
+        </section>
+        <!-- slider 4 -->
+        <section>
+            <div class="container mx-auto mt-14 ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/images/team.png" class="w-full" />
+                  <div class="absolute  justify-center inset-0 text-center">
+                    <h1 class="text-7xl pt-20 font-extrabold text-white placeholder-slate-200">Exotic tastes at your <br> doorstep</h1>
+                    <p class="text-xl pt-8 text-white font-medium">We supply highly quality organic products</p>
+                    <button class="btn  bg-[#F85559] px-8  text-white font-extrabold mt-10 border-0">Shop Now</button>
+                  </div>
+
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div class="max-w-7xl flex -mt-20 justify-center items-center text-center gap-10 bg-white shadow-xl rounded-md p-20 space-x-10 ml-20 relative inset-0">
+                        <div>
+                            <img src="./images/fruit1.png" alt="">
+                            <p class="text-xl font-medium">Graps</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit2.png" alt="">
+                            <p class="text-xl font-medium">Orange</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit3.png" alt="">
+                            <p class="text-xl font-medium">Mango</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit4.png" alt="">
+                            <p class="text-xl font-medium">Strawberry</p>
+                        </div>
+                        <div>
+                            <img src="./images/fruit5.png" alt="">
+                            <p class="text-xl font-medium">Mango</p>
+                        </div>     
+               </div>
+              </div>
+        </section>
+
+        <section class="mt-10"></section>
+    </main>
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
