@@ -76,7 +76,7 @@
     </section>
 
     <main>
-        <section class="container mx-auto mt-14">
+        <section class="container mx-auto mt-24">
             <div class="carousel relative w-full">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
@@ -91,9 +91,10 @@
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
-                    <div class="absolute bg-white  rounded-lg shadow-xl bottom-0 ml-28 ">
+                    <div class="absolute bg-white  rounded-lg shadow-xl -bottom-10 ml-28 ">
 
-                        <div class="flex justify-center items-center text-center  p-20 gap-20 ">
+                        <div
+                            class="flex justify-center  bg-[#FFFFFF] p-20 space-x-10  rounded-sm items-center text-center gap-20 shadow-2xl">
                             <div>
                                 <img src="./images/fruit1.png" alt="">
                                 <p class="text-xl font-medium">Graps</p>
@@ -130,10 +131,11 @@
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
                     </div>
+
                     <div class="absolute h-[250px] w-[1196px] bottom-0 right-28">
 
                         <div
-                            class="flex justify-center  bg-[#FFFFFF] p-20 space-x-10  rounded-sm items-center text-center gap-20 shadow-xl">
+                            class="flex justify-center  bg-[#FFFFFF] p-20 space-x-10  rounded-sm items-center text-center gap-20 shadow-2xl mt-20">
                             <div>
                                 <img src="./images/fruit1.png" alt="">
                                 <p class="text-xl font-medium">Graps</p>
@@ -172,7 +174,7 @@
                     </div>
                     <div class="absolute h-[250px] w-[1196px] bottom-0 right-28 ">
                         <div
-                            class="flex justify-center items-center text-center bg-[#FFFFFF] rounded-sm p-20 space-x-10 shadow-2xl">
+                            class="flex justify-center items-center text-center bg-[#FFFFFF] rounded-sm p-20 space-x-10 shadow-2xl mt-20 gap-20">
                             <div>
                                 <img src="./images/fruit1.png" alt="">
                                 <p class="text-xl font-medium">Graps</p>
@@ -212,7 +214,7 @@
                     </div>
                     <div class="absolute h-[250px] w-[1196px] bottom-0 right-28 ">
                         <div
-                            class="flex justify-center items-center text-center bg-white rounded-xl shadow-2xl p-20 gap-20 ">
+                            class="flex justify-center items-center text-center space-x-10 bg-white rounded-xl shadow-2xl p-20 gap-20 mt-20 ">
                             <div>
                                 <img src="./images/fruit1.png" alt="">
                                 <p class="text-xl font-medium">Graps</p>
@@ -239,8 +241,163 @@
             </div>
         </section>
 
-        
-        <section class="mt-10"></section>
+
+        <!-- deal of the day part -->
+
+        <section class="my-18">
+                <div class="container mx-auto flex justify-between">
+                    <div>
+                        <h1 class="text-5xl font-extrabold mb-6">Deal of the day</h1>
+                        <p class="text-lg font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                            <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <div class="flex gap-3">
+
+                                <span class="countdown font-lato text-5xl font-bold">
+                                    <span style="--value:29;"></span>
+                                </span>
+                                <p class="flex justify-center items-center">:</p>
+                            </div>
+                           <p>Days</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex gap-3">
+                                <span class="countdown text-5xl font-lato font-bold">
+                                    <span style="--value:15;"></span>
+                                </span>
+                                <p class="flex justify-center items-center">:</p>
+                            </div>
+                            Hours
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex gap-3">
+                                <span class="countdown font-bold font-lato text-5xl">
+                                    <span style="--value:25;"></span>
+                                </span>
+                                <p class="flex justify-center items-center">:</p>
+                            </div>
+                            Minites
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-bold font-lato text-5xl">
+                                <span style="--value:08;"></span>
+                            </span>
+                            Seconds
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="container mx-auto">
+                    <!-- card 1 -->
+                   <div class="flex justify-between gap-6">
+                    <div class="mt-10 card  bg-base-100 shadow-2xl mt-15">
+                        <figure class="px-10 pt-10">
+                          <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class=" text-2xl font-bold px-20">12.90$ - 18.85$</h2>
+                          <hr>
+                          <p class="text-xl font-medium text-gray-600 scroll-mt-10">Apples</p>
+
+                          <div class="rating mt-3">
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                          </div>
+
+                          <div class="card-actions">
+                            <a class="text-xl mt-2 font-bold text-[#F85559]" href="">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 1 complete -->
+                      <div class="mt-10 card  bg-base-100 shadow-2xl mt-15">
+                        <figure class="px-10 pt-10">
+                          <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class=" text-2xl font-bold px-20">12.90$ - 18.85$</h2>
+                          <hr>
+                          <p class="text-xl font-medium text-gray-600 scroll-mt-10">Orange</p>
+
+                          <div class="rating mt-3">
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                          </div>
+
+                          <div class="card-actions">
+                            <a class="text-xl mt-2 font-bold text-[#F85559]" href="">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 2 complete -->
+                      <div class="mt-10 card  bg-base-100 shadow-2xl mt-15">
+                        <figure class="px-10 pt-10">
+                          <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class=" text-2xl font-bold px-20">12.90$ - 18.85$</h2>
+                          <hr>
+                          <p class="text-xl font-medium text-gray-600 scroll-mt-10">Red Dragon</p>
+
+                          <div class="rating mt-3">
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                          </div>
+
+                          <div class="card-actions">
+                            <a class="text-xl mt-2 font-bold text-[#F85559]" href="">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 3 complete -->
+                      <div class="mt-10 card bg-base-100 shadow-2xl mt-15">
+                        <figure class="px-10 pt-10">
+                          <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class=" text-2xl font-bold px-20">12.90$ - 18.85$</h2>
+                          <hr>
+                          <p class="text-xl font-medium text-gray-600 scroll-mt-10">Banana</p>
+
+                          <div class="rating mt-3">
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                          </div>
+
+                          <div class="card-actions">
+                            <a class="text-xl mt-2 font-bold text-[#F85559]" href="">Details</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card 4 complete -->
+                       <!-- for button -->
+                   </div>
+                  
+                   <div class="flex justify-center my-7">
+                    <button class="btn text-white bg-[#F85559] px-7  font-bold  border-0 mt-6">Shop All
+                    </button>
+                   </div>
+                </div>
+        </section>
+
+        <section class="mt-35 mr-20">
+            <p>hlw</p>
+        </section>
+
     </main>
 
     <footer>
